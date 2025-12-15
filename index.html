@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sugestão de Presentes</title>
+</head>
+
+<body>
+
+    <!-- Cadastrar Presentes -->
+    <div>
+        <h2>Cadastrar Presentes</h2>
+        <form id="formCadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="2" max="14" required><br><br>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select><br><br>
+
+            <button type="submit">Cadastrar Presente</button>
+        </form>
+    </div>
+
+    <!-- Roleta de Presentes -->
+    <div>
+        <h2>Roleta de Presentes</h2>
+        <button onclick="girarRoleta()">Girar Roleta</button>
+        <div id="resultadoRoleta" style="margin-top: 20px; font-size: 20px; font-weight: bold;"></div>
+    </div>
+
+    <!-- Lista de Presentes Cadastrados -->
+    <div>
+        <h2>Presentes Cadastrados</h2>
+        <ul id="listaPresentes"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

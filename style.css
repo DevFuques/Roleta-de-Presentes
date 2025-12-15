@@ -1,0 +1,108 @@
+/* Fonte infantil */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+}
+
+body {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    padding: 20px;
+}
+
+/* Containers */
+div {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    border: 4px dashed #ff6f61;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #ff6f61;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* Inputs e Select */
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 3px solid #4a90e2;
+    font-size: 16px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #7ed321;
+    background-color: #f0fff4;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7ed321;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #6bc118;
+    transform: scale(1.05);
+}
+
+/* Resultado da Roleta */
+#resultadoRoleta {
+    text-align: center;
+    color: #9013fe;
+    background-color: #f9f0ff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid #9013fe;
+}
+
+/* Lista de presentes */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff3cd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border-left: 8px solid #ffcc00;
+    font-weight: bold;
+}
+
+/* Efeito divertido */
+div:hover {
+    transform: rotate(-0.5deg);
+    transition: transform 0.3s;
+}
